@@ -6,8 +6,10 @@ public class Player : MonoBehaviour
 {
     public int maxHealth = 3;
     public int currentHealth;
+    public int score = 0;
 
     public HealthBar healthBar;
+    public GameOverScreen GameOverScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -29,5 +31,17 @@ public class Player : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+
+        if (currentHealth == 0)
+        {
+            GameOver();
+        }
+
+        score++;
+    }
+
+    public void GameOver()
+    {
+        GameOverScreen.Setup(score);
     }
 }
