@@ -36,8 +36,6 @@ public class Player : MonoBehaviour
         {
             GameOver();
         }
-
-        score++;
     }
 
     public void GameOver()
