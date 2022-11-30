@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
     public int maxHealth = 3;
     public int currentHealth;
-    public int score = 0;
 
     public HealthBar healthBar;
     public GameOverScreen GameOverScreen;
+    public Score scoreScript;
 
     // Start is called before the first frame update
     void Start()
@@ -21,10 +22,12 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.Space))
+        /*
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             TakeDamage(1);
-        }*/
+        }
+        */
     }
 
     void TakeDamage(int damage)
@@ -40,6 +43,6 @@ public class Player : MonoBehaviour
 
     public void GameOver()
     {
-        GameOverScreen.Setup(score);
+        GameOverScreen.Setup(scoreScript.score);
     }
 }
