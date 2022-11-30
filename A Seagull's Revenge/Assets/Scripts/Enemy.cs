@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
 
     public int health = 1;
+    public Score scoreScript;
 
     //public GameObject deathEffect;
 
@@ -14,6 +15,7 @@ public class Enemy : MonoBehaviour {
 
         if (health <= 0)
         {
+            scoreScript.ChangeScore(1);
             Die();
         }
     }
