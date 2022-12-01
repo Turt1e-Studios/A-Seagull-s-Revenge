@@ -19,17 +19,17 @@ public class EnemySpawner : MonoBehaviour
     private GameObject v6SwarmerPrefab;
 
     [SerializeField]
-    private float swarmerInterval = 3f;
+    private float swarmerInterval = 2f;
     [SerializeField]
-    private float V2SwarmerInterval = 10f;
+    private float V2SwarmerInterval = 5f;
     [SerializeField]
-    private float V3SwarmerInterval = 1.5f;
+    private float V3SwarmerInterval = 0.5f;
     [SerializeField]
-    private float V4SwarmerInterval = 7f;
+    private float V4SwarmerInterval = 3f;
     [SerializeField]
-    private float V5SwarmerInterval = 9f;
+    private float V5SwarmerInterval = 7f;
     [SerializeField]
-    private float V6SwarmerInterval = 13f;
+    private float V6SwarmerInterval = 9f;
 
     // Start is called before the first frame update
     void Start()
