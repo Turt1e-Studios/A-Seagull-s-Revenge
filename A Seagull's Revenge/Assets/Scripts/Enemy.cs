@@ -18,8 +18,9 @@ public class Enemy : MonoBehaviour {
 
         if (health <= 0)
         {
+
+            //scoreScript.ChangeScore(1);
             
-            scoreScript.ChangeScore(1);
             Die();
         }
     }
