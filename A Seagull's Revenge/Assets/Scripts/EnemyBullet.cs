@@ -8,11 +8,9 @@ public class EnemyBullet : MonoBehaviour
     public Rigidbody2D rb;
     public float force;
     private float timer;
-    //public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-       
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
 
@@ -38,7 +36,6 @@ public class EnemyBullet : MonoBehaviour
         {
             player.TakeDamage(1);
             Destroy(gameObject);
-            //animator.SetBool("IsBullet", false);
         }
          
     }

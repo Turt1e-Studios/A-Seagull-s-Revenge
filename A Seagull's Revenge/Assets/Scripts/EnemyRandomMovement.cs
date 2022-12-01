@@ -11,13 +11,12 @@ public class EnemyRandomMovement : MonoBehaviour
     [SerializeField]
     float maxDistance;
 
-    public static Vector2 wayPoint;
+    Vector2 wayPoint;
     
     bool facingRight = true;
     float moveHorizontal;
-   
 
-
+    
 
     // Start is called before the first frame update
     void Start()
@@ -46,7 +45,7 @@ public class EnemyRandomMovement : MonoBehaviour
         }
     }
 
-    public void SetNewDestination()
+    void SetNewDestination()
     {
         
         wayPoint = new Vector2(Random.Range(-maxDistance, maxDistance), 0);
