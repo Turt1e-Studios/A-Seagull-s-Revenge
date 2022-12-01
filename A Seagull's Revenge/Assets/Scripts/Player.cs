@@ -23,11 +23,16 @@ public class Player : MonoBehaviour
     void Update()
     {
         /*
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             TakeDamage(1);
         }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            GameOver();
+        }
         */
+
     }
 
     public void TakeDamage(int damage)
