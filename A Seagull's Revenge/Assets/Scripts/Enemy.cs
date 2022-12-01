@@ -7,7 +7,6 @@ public class Enemy : MonoBehaviour {
 
     public int health = 1;
     public Score scoreScript;
-  
 
 
     //public GameObject deathEffect;
@@ -19,7 +18,7 @@ public class Enemy : MonoBehaviour {
         if (health <= 0)
         {
 
-            //scoreScript.ChangeScore(1);
+            scoreScript.ChangeScore(1);
             
             Die();
         }
@@ -35,7 +34,8 @@ public class Enemy : MonoBehaviour {
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject scoreObj = GameObject.Find("Score");
+        scoreScript = scoreObj.GetComponent<Score>();
     }
 
     // Update is called once per frame
