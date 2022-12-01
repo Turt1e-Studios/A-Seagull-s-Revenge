@@ -35,14 +35,14 @@ public class EnemyRandomMovement : MonoBehaviour
             SetNewDestination();
         }
 
-        /*if (wayPoint.x > 0 && !facingRight)
+        if (wayPoint.x > 0 && !facingRight)
         {
             Flip();
         }
         if (wayPoint.x < 0 && facingRight)
         {
             Flip();
-        }*/
+        }
     }
 
     void SetNewDestination()

@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Enemy : MonoBehaviour {
 
     public int health = 1;
     public Score scoreScript;
+  
+
 
     //public GameObject deathEffect;
 
@@ -15,6 +18,7 @@ public class Enemy : MonoBehaviour {
 
         if (health <= 0)
         {
+            
             scoreScript.ChangeScore(1);
             Die();
         }
@@ -25,6 +29,8 @@ public class Enemy : MonoBehaviour {
         //Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
+
+    
     // Start is called before the first frame update
     void Start()
     {
