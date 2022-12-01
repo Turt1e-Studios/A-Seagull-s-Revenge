@@ -6,6 +6,9 @@ public class Weapon : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
+    public float cooldown;
+    float lastShot;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,11 @@ public class Weapon : MonoBehaviour
 
     void Shoot()
     {
+        if (Time.time - lastShot < cooldown)
+        {
+            return;
+        }
+        lastShot = Time.time;
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
 }
