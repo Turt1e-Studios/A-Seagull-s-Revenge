@@ -37,7 +37,11 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
+        // prevent overhealing when eating food
+        if (damage > 0 || currentHealth < maxHealth)
+        {
+            currentHealth -= damage;
+        }
         healthBar.SetHealth(currentHealth);
 
         if (currentHealth == 0)
