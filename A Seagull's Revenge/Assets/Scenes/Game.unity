@@ -571,7 +571,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394942729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10.09, z: 0}
+  m_LocalPosition: {x: 0, y: 8.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -590,7 +590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28cd1c45d498d4547a9c92c0ca09dcd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodSpawnInterval: 10
+  foodSpawnInterval: 6
   spawningRange: 10
   swarmerPrefab: {fileID: 99499012115138200, guid: 6fa7f134102f2ee40a11051f6bbe8af2, type: 3}
 --- !u!1 &397280320
@@ -2187,7 +2187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swarmerPrefab: {fileID: 4561732741712815506, guid: 62061b32711885b4da07c14b97187998, type: 3}
   v2SwarmerPrefab: {fileID: 0}
-  swarmerInterval: 3.5
+  swarmerInterval: 1
 --- !u!4 &1197746142
 Transform:
   m_ObjectHideFlags: 0
