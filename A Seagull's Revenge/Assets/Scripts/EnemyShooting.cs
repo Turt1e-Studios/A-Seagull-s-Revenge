@@ -8,6 +8,7 @@ public class EnemyShooting : MonoBehaviour
     public GameObject Bullet;
     public Transform bulletPos;
     public Animator animator;
+    
 
     private float timer;
     // Start is called before the first frame update
