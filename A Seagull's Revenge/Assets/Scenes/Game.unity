@@ -389,6 +389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 1783808672}
   bulletPrefab: {fileID: 2942939193886109354, guid: db2719dc0b2761c48a59fdd7d82b1ec3, type: 3}
+  cooldown: 0.5
 --- !u!95 &285055125
 Animator:
   serializedVersion: 4
@@ -2187,7 +2188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swarmerPrefab: {fileID: 4561732741712815506, guid: 62061b32711885b4da07c14b97187998, type: 3}
   v2SwarmerPrefab: {fileID: 0}
-  swarmerInterval: 1
+  swarmerInterval: 1.3
 --- !u!4 &1197746142
 Transform:
   m_ObjectHideFlags: 0
