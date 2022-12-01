@@ -9,17 +9,37 @@ public class EnemySpawner : MonoBehaviour
     private GameObject swarmerPrefab;
     [SerializeField]
     private GameObject v2SwarmerPrefab;
+    [SerializeField]
+    private GameObject v3SwarmerPrefab;
+    [SerializeField]
+    private GameObject v4SwarmerPrefab;
+    [SerializeField]
+    private GameObject v5SwarmerPrefab;
+    [SerializeField]
+    private GameObject v6SwarmerPrefab;
 
     [SerializeField]
-    private float swarmerInterval = 8f;
+    private float swarmerInterval = 3f;
     [SerializeField]
     private float V2SwarmerInterval = 10f;
+    [SerializeField]
+    private float V3SwarmerInterval = 1.5f;
+    [SerializeField]
+    private float V4SwarmerInterval = 7f;
+    [SerializeField]
+    private float V5SwarmerInterval = 9f;
+    [SerializeField]
+    private float V6SwarmerInterval = 13f;
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(spawnEnemy(swarmerInterval, swarmerPrefab));
-        StartCoroutine(spawnEnemy(swarmerInterval, v2SwarmerPrefab));
+        StartCoroutine(spawnEnemy(V2SwarmerInterval, v2SwarmerPrefab));
+        StartCoroutine(spawnEnemy(V3SwarmerInterval, v3SwarmerPrefab));
+        StartCoroutine(spawnEnemy(V4SwarmerInterval, v4SwarmerPrefab));
+        StartCoroutine(spawnEnemy(V5SwarmerInterval, v5SwarmerPrefab));
+        StartCoroutine(spawnEnemy(V6SwarmerInterval, v6SwarmerPrefab));
     }
 
     // Update is called once per frame
